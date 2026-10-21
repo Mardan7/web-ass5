@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 24px;
+    color: #222;
+    background-color: white;
+}
+
+nav {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav a {
+    margin-right: 16px;
+    color: #222;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+button, input {
+    font: inherit;
+    padding: 6px;
+    margin-right: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#styleBox, #mouseBox {
+    background-color: lightgray;
+    padding: 20px;
+    width: 240px;
+    margin-bottom: 12px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+#tasks span {
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
