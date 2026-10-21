@@ -26,6 +26,8 @@ HTML, CSS, and vanilla JavaScript.
 Open index.html in a web browser. No installation is needed.
 Use the menu to open each page.
 Press F12 and select Console to see Tasks 0 and 1.
+Click Run Task 0 or Run Task 1 to run them again.
+The buttons in Tasks 2 and 3 switch between two values.
 Click task text on the To-Do List page to mark it as completed.
 Tasks are stored in an array. They are lost when you leave or reload the page.
 

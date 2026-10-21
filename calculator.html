@@ -14,13 +14,17 @@
         <a href="calculator.html">Calculator</a>
         <a href="todo.html">To-Do List</a>
     </nav>
-    <h1>Task 7 — Calculator</h1>
+    <h1>Calculator</h1>
+    <section id="calculator">
+    <h2>Task 7 — Calculator</h2>
+    <p>Enter two numbers and choose an operation.</p>
     <p><label for="first">First number:</label> <input id="first" type="number" step="any"></p>
     <p><label for="second">Second number:</label> <input id="second" type="number" step="any"></p>
-    <button id="plus">+</button>
-    <button id="minus">-</button>
-    <button id="multiply">*</button>
-    <button id="divide">/</button>
-    <p id="result">Result:</p>
+    <button id="plus" aria-label="Add">+</button>
+    <button id="minus" aria-label="Subtract">-</button>
+    <button id="multiply" aria-label="Multiply">*</button>
+    <button id="divide" aria-label="Divide">/</button>
+    <p id="result" aria-live="polite">Result: —</p>
+    </section>
 </body>
 </html>

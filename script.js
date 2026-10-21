@@ -1,14 +1,16 @@
 // Each section runs only on its own page.
-if (document.getElementById("home")) {
+function firstScript() {
+    console.log("Mardan Khalilov");
+    console.log("SE-2527");
+    alert("Hello, JavaScript World!");
+}
+
+function variables() {
     let name = "Mardan Khalilov";
     let group = "SE-2527";
     let student = true;
     let a = 10;
     let b = 5;
-
-    console.log(name);
-    console.log(group);
-    alert("Hello, JavaScript World!");
 
     console.log("Student: " + name + ", group: " + group);
     console.log("Is a student: " + student);
@@ -18,17 +20,37 @@ if (document.getElementById("home")) {
     console.log("Division: " + (a / b));
 }
 
+if (document.getElementById("home")) {
+    document.getElementById("runFirst").addEventListener("click", firstScript);
+    document.getElementById("runVariables").addEventListener("click", variables);
+}
+
 if (document.getElementById("changeText")) {
     document.getElementById("changeText").addEventListener("click", function () {
-        document.getElementById("text").textContent = "The text has changed!";
+        let text = document.getElementById("text");
+        if (text.textContent === "This is the original text.") {
+            text.textContent = "The text has changed!";
+        } else {
+            text.textContent = "This is the original text.";
+        }
     });
 
     document.getElementById("changeColor").addEventListener("click", function () {
-        document.getElementById("styleBox").style.backgroundColor = "lightblue";
+        let box = document.getElementById("styleBox");
+        if (box.style.backgroundColor === "lightblue") {
+            box.style.backgroundColor = "lightgray";
+        } else {
+            box.style.backgroundColor = "lightblue";
+        }
     });
 
     document.getElementById("changeSize").addEventListener("click", function () {
-        document.getElementById("styleBox").style.fontSize = "24px";
+        let box = document.getElementById("styleBox");
+        if (box.style.fontSize === "24px") {
+            box.style.fontSize = "16px";
+        } else {
+            box.style.fontSize = "24px";
+        }
     });
 
     let items = document.getElementById("items");
@@ -87,7 +109,7 @@ function calculate(operator) {
         answer = a / b;
     }
 
-    result.textContent = "Result: " + answer;
+    result.textContent = a + " " + operator + " " + b + " = " + answer;
 }
 
 if (document.getElementById("plus")) {
